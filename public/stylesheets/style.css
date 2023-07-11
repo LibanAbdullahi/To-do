@@ -1,105 +1,141 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-    body {
-    background: #302b29;
-    }
-    .todo-container {
-    color: white;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    padding: 20px;
-    width: 600px;
-    transform: translate(-50%,-50%);
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-    .todo {
-    width: 400px;
-    }
-    .todo-container h2 {
-    padding: 10px;
-    font-family: 'Candal', sans-serif;
-    font-size: 2em;
-    }
-    .todo-header input {
-    width: 92%;
-    border: none;
-    border-radius: 5px;
-    height: 20px;
-    font-family: 'Candal', sans-serif;
-    }
-    .todo-header button {
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    padding: 5px;
-    font-family: 'Candal', sans-serif;
-    background-color: rgb(51, 212, 100);
-    }
-    .todo-container ul {
-    list-style: none;
-    }
-    .todo-list-item {
-    padding: 10px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-    font-family: 'Candal', sans-serif;
-    background: rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: row;
-    }
-    .todo-list-item form {
-    width: 100%;
-    display: flex;
-    }
-    .todo-list-item input {
-    flex-grow: 2;
-    margin-right: 20px;
-    border: none;
-    border-radius: 5px;
-    font-family: 'Candal', sans-serif;
-    }
-    .todo-list-item button {
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 5px;
-    font-family: 'Candal', sans-serif;
-    background-color: rgb(51, 212, 100);
-    }
-    .todo-list-item .cancel {
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 5px;
-    font-family: 'Candal', sans-serif;
-    background-color: rgb(223, 43, 43);
-    margin-left: 5px;
-    }
-    .todo-list-item div {
-    flex-grow: 2;
-    }
-    .todo-list-item .edit {
-    color : rgb(143, 233, 58);
-    margin-right: 10px;
-    cursor:pointer;
-    text-decoration: none;
-    }
-    .todo-list-item .remove {
-    color : rgb(243, 96, 96);
-    margin-right: 5px;
-    cursor:pointer;
-    text-decoration: none;
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #302b29, #1f2e2e);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.todo-container {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  width: 600px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.todo {
+  width: 400px;
+}
+
+.todo-container h2 {
+  padding: 10px;
+  font-family: "Candal", sans-serif;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.todo-header input {
+  width: 92%;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  font-family: "Candal", sans-serif;
+  font-size: 1em;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.todo-header button {
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 8px;
+  font-family: "Candal", sans-serif;
+  background-color: #33d464;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.todo-container ul {
+  list-style: none;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.todo-list-item {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Candal", sans-serif;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.todo-list-item form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.todo-list-item input {
+  flex-grow: 2;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Candal", sans-serif;
+  font-size: 1em;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.todo-list-item button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  font-family: "Candal", sans-serif;
+  background-color: #33d464;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.todo-list-item .cancel {
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  font-family: "Candal", sans-serif;
+  background-color: #df2b2b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  margin-left: 5px;
+}
+
+.todo-list-item div {
+  flex-grow: 2;
+}
+
+.todo-list-item .edit {
+  color: #8fe93a;
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.todo-list-item .remove {
+  color: #f36060;
+  margin-right: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
